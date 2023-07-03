@@ -2,7 +2,7 @@
 
 ![Buildtapp](src/assets/images/app-screenshot.png)
 
-## Table of Contents
+## Demo features
 
 - Implemented NodeJS / Express API to parse and chunk the large (1.5GB) raw data file into streamed API chunks for client performance
 - Used file `14-29-05_data_data.txt` per `https://github.com/idoven/frontend-challenge/tree/main/data` - added to .gitattributes as lfs
@@ -12,11 +12,11 @@
 - Added Chart.Js to render ECG
 - Added mocked patient Banner and patient object
 - Implemented Context API / Provider and hooks to demonstrate - returns patient data (static) from API
-- Used React Functional Components
+- Used React Functional Components - created multiple reusable components
 - Used TypeScript throughout application
 - Added Jest Tests (2 Test Suites and 5 tests) to demonstrate
 - Used Vite
-- Added Material UI / Tailwind and Emotion styled components to demonstrate the dofferent approaches available in thes demo app
+- Added Material UI / Tailwind and Emotion styled components to demonstrate the different approaches available in the demo app
 - Created child components in a reusable way throughout
 
 ## Installation and Usage
