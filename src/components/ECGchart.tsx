@@ -110,7 +110,7 @@ const ECGChart: React.FC<ECGChartProps> = ({
             enabled: true,
           },
           drag: {
-            enabled: true,
+            enabled: false,
           },
           mode: "xy",
         },
