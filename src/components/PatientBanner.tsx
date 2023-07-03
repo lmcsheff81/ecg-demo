@@ -50,6 +50,7 @@ const moduleCss = {
     font-weight: bold;
     @media (max-width: 768px) {
       width: 100%;
+      margin-right: 0;
     }
   `,
 
