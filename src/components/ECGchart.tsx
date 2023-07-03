@@ -12,7 +12,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js/auto";
-import { ChartData, Colors } from "chart.js";
+import { ChartData, ChartOptions, Colors } from "chart.js";
 import ChartZoomPlugin from "chartjs-plugin-zoom";
 import { Line } from "react-chartjs-2";
 
@@ -27,8 +27,6 @@ Chart.register(
   ChartZoomPlugin,
   Colors
 );
-
-import { ChartOptions } from "chart.js";
 
 interface ECGChartProps {
   chartData: number[];
@@ -75,9 +73,9 @@ const ECGChart: React.FC<ECGChartProps> = ({
       y: {
         title: {
           display: true,
-          text: "millivolts (mV)",
+          text: "Millivolts (mV)",
           font: {
-            size: 14,
+            size: 15,
           },
         },
         grid: {
