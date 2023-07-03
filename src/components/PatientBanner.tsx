@@ -3,12 +3,12 @@ import { ReactNode } from "react";
 import { css, SerializedStyles } from "@emotion/react";
 
 interface PatientBannerProps {
-  patientObj: Partial<Patient>;
+  patientObj: Partial<PatientInterface>;
   children?: ReactNode;
   css?: SerializedStyles;
 }
 
-export interface Patient {
+export interface PatientInterface {
   title: string;
   surname: string;
   forename: string;

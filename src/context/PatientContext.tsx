@@ -1,19 +1,8 @@
 import React, { createContext, useEffect, useState } from "react";
-
-interface Patient {
-  title: string;
-  surname: string;
-  forename: string;
-  hospitalID: number;
-  nationalID: number;
-  clinician: string;
-  ward: string;
-  bay: string;
-  bed: string;
-}
+import { PatientInterface } from "../components/PatientBanner";
 
 export interface PatientContextProps {
-  patient: Patient | null;
+  patient: PatientInterface | null;
   isLoadingPatientData: boolean;
 }
 
@@ -27,7 +16,7 @@ interface PatientProviderProps {
 }
 
 export function PatientProvider({ children, apiUrl }: PatientProviderProps) {
-  const [patient, setPatient] = useState<Patient | null>(null);
+  const [patient, setPatient] = useState<PatientInterface | null>(null);
   const [isLoadingPatientData, setIsLoading] = useState(true);
 
   useEffect(() => {

@@ -171,7 +171,9 @@ io.on("connection", (socket) => {
   console.log("Connected to socket");
   // Send initial message to the client about the index generation status
   if (indexGenerated) {
-    console.log("Index generation was a success - ECH data now available");
+    console.log(
+      "Index generation complete - ECG data now available to API client"
+    );
     socket.emit("indexGenerated", totalCountOfChunks);
   }
 
