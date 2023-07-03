@@ -1,6 +1,4 @@
-# Project Name
-
-IDOVEN React Coding Challenge - Liam McSheffrey
+# IDOVEN React Coding Challenge
 
 ![Buildtapp](src/assets/images/app-screenshot.png)
 
