@@ -5,7 +5,7 @@ import ECGchart from "../components/ECGchart";
 import { API_URL } from "../utils/consts";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:3000"); // TODO: Replace with appropriate server URL
+const socket = io(`${API_URL}`);
 
 interface ECGData {
   time: string;
