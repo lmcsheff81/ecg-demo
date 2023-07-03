@@ -66,13 +66,14 @@ function ECGrender() {
   };
 
   useEffect(() => {
-    // Listen for the "indexGenerated" event from the service, indicating that the large ECG file has been indexed for chunked/fast response processing
+    // Listen for the "indexGenerated" event from the API service, indicating that the large ECG file has been indexed for chunked/fast response processing
     socket.on("indexGenerated", (chunks: number) => {
       console.log(`Index is generated with ${chunks} mapped`);
+
       setTotalCountOfChunks(chunks);
 
       const fetchData = async () => {
-        await fetchEcgData(activeChunk);
+        await fetchEcgData(1); //Load the first chunk
       };
 
       try {
@@ -86,7 +87,7 @@ function ECGrender() {
     return () => {
       socket.off("indexGenerated");
     };
-  }, [activeChunk]);
+  }, []);
 
   if (isLoading)
     return (
@@ -94,7 +95,7 @@ function ECGrender() {
         <Box className="text-lg items-center" sx={{ display: "flex" }}>
           <span className="mr-4 font-bold">
             Please wait, preparing first load of patient ECG data...
-          </span>{" "}
+          </span>
           <CircularProgress size={60} />
         </Box>
       </div>
