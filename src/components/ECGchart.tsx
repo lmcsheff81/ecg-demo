@@ -34,7 +34,7 @@ interface ECGChartProps {
   getNextChunk: () => void;
   getPreviousChunk: () => void;
   activeChunk: string | number;
-  options?: ChartOptions<"line">;
+  options?: ChartOptions<"line">; //https://react-chartjs-2.js.org/faq/typescript/
 }
 
 const ECGChart: React.FC<ECGChartProps> = ({

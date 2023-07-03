@@ -1,6 +1,4 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 import Layout from "../components/Layout/Layout";
 import ECGrender from "../views/ECGrender";

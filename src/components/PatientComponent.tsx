@@ -1,4 +1,3 @@
-import React from "react";
 import { PatientBanner } from "./PatientBanner";
 import { usePatientContext } from "../utils/patientUtils";
 
