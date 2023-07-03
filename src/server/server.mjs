@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const allowedOrigins = ["http://localhost:3001"]; // Specify the allowed origins
+const allowedOrigins = ["http://localhost:3001"]; // Specify the allowed origins for the demo app
 
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -20,11 +20,10 @@ const io = new Server(server, {
   },
 });
 
-const port = 3000;
+const PORT = 3000;
 
 const corsOptions = {
   origin: (origin, callback) => {
-    // Check if the origin is in the allowed origins list
     if (allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
@@ -163,8 +162,8 @@ app.get("/api/patient", (req, res) => {
   res.json(patientObj);
 });
 
-server.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+server.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
   generateIndex();
 });
 
