@@ -22,7 +22,9 @@
 ## Installation and Usage
 
 1. Clone the repository: `git clone https://github.com/lmcsheff81/ecg-demo.git`
-2. Navigate to the project directory
+2. Navigate to the project directory `ecg-app-demo`
 3. Install the dependencies: `npm install`
-4. Run `npm run dev` to build and run locally (frontend starts on port 3000, backend API on 3001)
-5. Run `npm test` to run unit tests
+4. _Important_ -Install Server packages - go to the `ecg-app-demo/src/server` directory `src/server` and run `npm install`
+5. cd to project root `ecg-app-demo`
+6. Run `npm run dev` to build and run locally (frontend starts on port 3000, backend API on 3001)
+7. Run `npm test` to run unit tests
