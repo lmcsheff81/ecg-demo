@@ -5,7 +5,7 @@
 ## Demo features
 
 - Implemented NodeJS / Express API to parse and chunk the large (1.5GB) raw data file into streamed API chunks for client performance
-- Server directory located in `\src\server` - please install packagess per Installation and Usage step 4
+- Server directory located in `\src\server` - please install packages per Installation and Usage step #4
 - Used file `14-29-05_data_data.txt` per `https://github.com/idoven/frontend-challenge/tree/main/data` - added to .gitattributes as lfs
 - Assuming, based on dataset, the raw values are represented as microvolts (uV).In clinical settings, from my experience, it is more common to display ECG data in millivolts (mV) than in microvolts (uV)
 - Added two API routes - `/api/ecg-data` and `/api/patient`
